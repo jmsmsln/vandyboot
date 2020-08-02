@@ -3,16 +3,16 @@ Elk Stack Project
 
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network depicted below:
 
-Diagrams/Elk Stack Diagram.drawio
+https://github.com/jmsmsln/vandyboot/blob/master/Diagrams/Elk%20Stack%20Diagram.drawio
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible Folder may be used to install only certain pieces of it, such as Filebeat.
 
   - https://github.com/jmsmsln/vandyboot/tree/master/Ansible
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -71,9 +71,9 @@ The playbook implements the following tasks:
 - Downloads the image sebp/elk:761 
 - Launches the docker elk container
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance:
 
-Images/Container on Elk Server is Running.jpg
+https://github.com/jmsmsln/vandyboot/blob/master/Images/Container%20on%20Elk%20Server%20is%20Running.jpg
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -94,4 +94,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the Ansible/install-elk.yml file to /etc/ansible/install-elk.yml.
 - Update the /etc/ansible/hosts file to include a new group called [elks] with the IP Address of the machine to deploy the Elk Stack "(IP Address) ansible_python_interpreter=/usr/bin/python3".
-- Run the playbook, and navigate to http://[your.Elk-Machine.External.IP]:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to http://[your.Elk-Machine.External.IP]:5601/app/kibana to check that the installation worked as expected. You should see the following page:
+
+https://github.com/jmsmsln/vandyboot/blob/master/Images/Elk%20Server%20Access%20using%20Public%20IP%20Address.jpg
