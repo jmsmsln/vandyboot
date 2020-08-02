@@ -92,7 +92,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Ansible/install-elk.yml file to /etc/ansible/install-elk.yml.
+- Copy the https://github.com/jmsmsln/vandyboot/blob/master/Ansible/install-elk.yml file to /etc/ansible/install-elk.yml.
 - Update the /etc/ansible/hosts file to include a new group called [elks] with the IP Address of the machine to deploy the Elk Stack "(IP Address) ansible_python_interpreter=/usr/bin/python3".
 - Run the playbook, and navigate to http://[your.Elk-Machine.External.IP]:5601/app/kibana to check that the installation worked as expected. You should see the following page:
 
